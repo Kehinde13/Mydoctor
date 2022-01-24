@@ -16,164 +16,193 @@
 <body>
     <nav class="flex space-x-10 justify-between py-4 px-10 shadow-lg">
         <h1 class="font-semibold text-blue-500 font-Hara">MyDoctorPadi</h1>
-        <ul class="flex space-x-7">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Services</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact us</a></li>
+        <div class="flex space-x-10 ">
+            <ul class="hidden md:flex space-x-10">
+                <li><a href="#" class="btn p-2 hover:bg-blue-600 hover:text-white tranition ease-out duration-300 rounded-full">Home</a></li>
+                <li><a href="#" class="btn p-2 hover:bg-blue-600 hover:text-white tranition ease-out duration-300 rounded-full">Our Services</a></li>
+                <li><a href="#" class="btn p-2 hover:bg-blue-600 hover:text-white tranition ease-out duration-300 rounded-full">Blog</a></li>
+                <li ><a class="btn p-2 hover:bg-blue-600 hover:text-white tranition ease-out duration-300 rounded-full" href="#">Contact us</a></li>
+                <li><a href="./select user/user.html" class="btn py-1 px-4 bg-pink-400 rounded-md text-white">Get Started</a></li>
+            </ul>
+        
+            <div class="md:hidden" id="burger">
+                <img src=".\Images\hamburger-icon.png" alt="hamburger" width="30px" >
+            </div>
+        </div>
+        
+    </nav>
+    <!-- mobile nav-->
+    <nav class="hidden px-10 py-5 text-center" id="menu">
+        <ul class=" space-y-7">
+            <li><a href="#" class="btn p-2 hover:bg-blue-600 hover:text-white tranition ease-out duration-300 rounded-full">Home</a></li>
+            <li><a href="#" class="btn p-2 hover:bg-blue-600 hover:text-white tranition ease-out duration-300 rounded-full">Our Services</a></li>
+            <li><a href="#" class="btn p-2 hover:bg-blue-600 hover:text-white tranition ease-out duration-300 rounded-full">Blog</a></li>
+            <li><a href="#" class="btn p-2 hover:bg-blue-600 hover:text-white tranition ease-out duration-300 rounded-full">Contact us</a></li>
+            <li><a href="./select user/user.html" class="btn py-1 px-4 bg-pink-400 rounded-md text-white">Get Started</a></li>
         </ul>
-        <a href="#" class="btn py-1 px-4 bg-pink-400 rounded-md text-white">Get Started</a>
     </nav>
 
-    <header class="pt-20 px-10 flex justify-between mb-5">
-        <section>
-            <h1 class="text-4xl font-semibold">Welcome to</h1>
-            <h1 class="text-5xl font-bold text-blue-500">Mydoctorpadi</h1><br>
-            <p>MyDoctorPadi is a health care brand aim at <br> providing remote health care services by <br> combining tele-medecine and tele-monitoring</p> <br>
-            <a href="#" class="btn py-2 px-5 bg-pink-500 rounded-md text-white">Sign up</a>
+    <header class="md:pt-20 px-10 flex justify-between mb-5">
+        <section class="p-5">
+            <h1 class="text-3xl md:text-4xl font-semibold ">Welcome to</h1>
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-500">Mydoctorpadi</h1><br>
+            <p>MyDoctorPadi is a health care brand aim at<br> providing remote health care services by <br> combining tele-medecine and tele-monitoring</p> <br>
+            <a href="./select user/user.html" class="btn py-2 px-5 bg-pink-500 rounded-md text-white">Sign up</a>
         </section>
 
-        <section class="float-right mr-10"><img src="./images/2-doctors.jpg" alt="two doctors" srcset="" width="600px" style="border-radius:50%;"></section>
+        <section class="float-right mr-10 hidden md:inline-flex"><img src="./images/2-doctors.jpg" alt="two doctors" srcset="" width="600px" style="border-radius:50%;"></section>
     </header>
 
     <main>
-        <section class="flex justify-between p-5 bg-gray-200 text-center mb-20">
-            <div>
-                <img src="" alt="a doctor">
-                <a href="#">Access to Medical Expert</a>
-            </div>
+        <section class="px-10 md:flex justify-between md:p-5 bg-gray-200 text-center">
+            <figure class="px-20 py-5">
+                <img src="./Images/a-dr-with-pen-bk.jpg" alt="a doctor" width ="110px" style="border-radius: 50%;">
+                <figcaption><a href="#">Access to Medical Expert</a></figcaption> 
+            </figure>
 
-            <div>
-                <img src="#" alt="someone checking his Bp">
-                <a href="#">Check Bp on the go</a>
-            </div>
+            <figure class="px-20 py-5">
+                <img src="./Images/young-man-check.jpg" alt="someone checking his Bp" width ="180px" style="border-radius: 50%;">
+                <figcaption><a href="#">Check Bp on the go</a></figcaption> 
+            </figure>
 
-            <div>
-                <img src="#" alt="..">
-                <a href="#">No 1 health companion</a>
-            </div> 
+            <figure class="px-20 py-5" > 
+                <img src="./Images/a-lady-browsing.jpg" alt=".." width ="180px" style="border-radius: 50%;">
+                <figure><a href="#">No 1 health companion</a></figure> 
+            </figure> 
 
-            <div>
-                <img src="./images/myDoctorPadi-w_b.jpg" alt=".." width ="100px" style="border-radius: 50%;">
-                <a href="#">Daily health prompts</a>
-            </div>
+            <figure class="px-20 py-5">
+                <img src="./images/myDoctorPadi-w_b.jpg" alt=".." width ="120px" style="border-radius: 50%;">
+                <figcaption><a href="#">Daily health prompts</a></figcaption> 
+            </figure>
         </section>
+        <div class="block">
+            <figure class="">
+                <img src="./Images/F- doc-with-2-others.jpg" alt="a-tired-doctor" width="700px">
+            </figure>   
+        </div>
+        <section class=" md:flex justify-between space-x-10">  
+            <article class="bg-blue-500 md:p-8 py-5 px-20 text-white">
+                    <h3 class="text-4xl font-semibold">Our Mission</h3>
+                    <p class="font-bold my-3">
+                        Our goal is to provide a platform where individuals can track monitor their health vitals and also also have a personalized health record.     
+                    </p>
+                    <ol class="list-disc">
+                        <li>Improve health knowledge through insightful health prompts and blog.</li>
+                        <li>To connect atients to expert health providers.</li>
+                        <li>Monitoring vitals</li>
+                        <li>Health knowledge and materiels on the app</li>
+                        <li>Access to doctors</li>
+                    </ol>
+            </article> 
 
-        <section>
-            <article class="text-center p-7">
-                <h2 class="text-3xl font-bold text-blue-400">Our <span class="text-pink-400">Goal</span></h2>
-                <div class="text-left p-20 flex space-x-10 justify-around ">
-                    <div>
-                        <h1 class="text-blue-500 font-bold mb-5">Vision Statement</h1> 
-    
-                        To become a premium health care brand <br> combining telemedicine and tele-monitoring,<br> making individuals more health savvy and <br> improving access to health care experts. <br><br>
-    
-                        - monitoring vitals <br>
-                        - Health knowledge and materiels on the app <br>
-                        access to doctors
-    
-                    </div>
-                    <div>
-                        <h1 class="text-blue-500 font-bold mb-5">Mission Statement</h1>
-
-                        To provide a platform where individuals <br> can track monitor health vitals <br>
-                        Develop a personalized health record <br>
-                        Improve health knowledge through <br> insightful health prompts and blog. <br>
-                        To connect atients to expert health <br> providers.
-                        
-                    </div>
-                </div>
+            <article class="p-10 text-left">
+                <h3 class="text-4xl font-semibold text-blue-400 py-4">Our Vision</h3>
+                <p>The dream is to become a premium health <br> care brand combining tele-medicine and tele-monitoring, making individuals more  health savvy and improving access to  health care expert</p>
             </article>
         </section>
 
-        <section class="p-20">
-            <div>
-                <h2 class="text-blue-500 text-3xl font-bold mb-3">Need a <span>Doctor</span>?</h2>
-                <a href="" class="btn px-5 py-2 text-white bg-gray-600 rounded-sm">Our services</a>
-            </div>
+        <section class="mt-20 bg-gray-300 p-20 text-center">
+            <h2 class="text-3xl text-blue-400 font-semibold">Subscribe to our News Letter</h2>
+            <p class="text-2xl mb-2">Join our newsletter to stay up to date with our news and products.</p>
+            <form action="">
+                <input type="email" placeholder="Your Email" class="md:w-80 py-1 px-4 rounded-md">
+                <a href="#" class="p-1 bg-gray-600 text-white rounded-md"> Subscribe </a>
+            </form>
         </section>
 
-        <section class="text-center mb-10">
-            <div class="flex justify-between p-5 mb-5">
-                <div>
-                    <div></div>
+        
+        <!-- all-services section -->
+        <section id="all-services" class="md:mb-20 ">
+            <div class="md:flex justify-between p-20 space-x-6 space-y-10 md:space-y-0">
+                <div class="p-4 md:p-0">
+                    <div><img src="./images/google-map.jpg" alt="direction map" width="200px" style="border-radius: 20%;"></div>
                     <p><a href="#">hospitals and pharmacies around</a></p>
                 </div>
 
                 <div>
-                    <div></div>
+                    <div><img src="./images/live vd call.jpg" alt="live call with a doctor"width="200px" style="border-radius: 20%;"></div>
                     <p><a href="#">Book a consultation</a></p>
                 </div>
 
                 <div>
-                    <div></div>
+                    <div><img src=".\Images\IMG-20220122-WA0000.jpg" alt=".."width="200px" style="border-radius: 20%;" class="h-36"></div>
                     <p><a href="#">Your health vitals record</a></p>
                 </div>
 
                 <div>
-                    <div></div>
+                    <div><img src="./images/blood-glucose-checker.jpg" alt="blood-glocose-checker" width="200px" style="border-radius: 20%;"></div>
                     <p><a href="#">Track your daily blood glucose level</a></p>
                 </div>
-        </div>
-        <div class="flex justify-between p-5 mb-5 ">
-            <div>
-                <div></div>
-                <p><a href="#">Track your body mass index</a></p>
             </div>
+          
+            <div class="md:flex justify-between px-20 space-x-6 space-y-10 md:space-y-0 mb-4">
+                <div>
+                    <div><img src="./images/bmi.jpg" alt="bmi-image" width="200px" style="border-radius: 20%;"></div>
+                    <p><a href="#">Track your body mass index</a></p>
+                </div>
 
-            <div>
-                <div></div>
-                <p><a href="#">Track your daily blood pressure</a></p>
-            </div>
-
-            <div>
-                <div></div>
-                <p><a href="#">Monitor your vitals</a></p>
-            </div>
-
-            <div>
-                <div></div>
-                <p><a href="#">Daily health prompts</a></p>
-            </div>
-        </div>
+                <div>
+                    <div><img src="./images/hand-checker.jpg" alt="blood-pressure-checker" width="200px" style="border-radius: 20%;"></div>
+                    <p><a href="#">Track your daily blood pressure</a></p>
+                </div>
+                
+                <div>
+                    <div><img src="./images/monitor-disp.jpg" alt="result-display-on-monitor" width="200px" style="border-radius: 20%;" class="h-36"></div>
+                    <p><a href="#">Monitor your vitals</a></p>
+                </div>
+                
+                <div>
+                    <div><img src=".\Images\IMG-20220122-WA0001.jpg" alt=".." width="200px" style="border-radius: 20%;" ></div>
+                    <p><a href="#">Daily health prompts</a></p>
+                </div>
+          </div>
+            
         </section>
     </main>
-
-    <footer class="bg-gray-600 flex justify-between py-5 px-16 text-white">
-        <section>
-            <div>
-                <img src="" alt="..">
+    
+    <footer class="bg-gray-600 md:flex justify-between py-5 px-16 text-white space-x-6">
+        <section class="my-5">
+            <div class="space-y-3 md:text-left text-center">
                 <h5 class="font-bold text-2xl mb-5">Mydoctorpadi</h5>
+                <p>hello@mydoctorpadi.com</p>
+                <p>+2349000000000</p>
             </div>
-
-            <div>
-                <h6 class="font-bold ">Get started</h6>
-                <a href="#" class="decoration-solid">hello@mydoctorpadi.com</a>
+            
+            <div >
+                <ul class="flex justify-between mt-4 space-x-3">
+                    <li><a href=""><img src="./images/icons8-instagram-50.png" alt=""></a></li>
+                    <li><a href=""><img src="./images/icons8-facebook-50.png" alt=""></a></li>
+                    <li><a href=""><img src="./images/icons8-medium-50.png" alt=""></a></li>
+                    <li><a href=""><img src="./images/icons8-new-message-50.png" alt=""></a></li>
+                </ul>
             </div>
-
         </section>
-
-        <section class="">
-            <h5 class="font-bold text-2xl mb-5">Our services</h5>
-            <a href="#">Daily health prompts</a><br><br>
-            <a href="#">Monitor your vitals</a><br><br>
-            <a href="#">Track daily blood pressure</a><br><br>
-            <a href="#">Track daily blood glucose level</a><br><br>
-            <a href="#">Track your body mass index</a><br><br>
-            <a href="# ">Personalize record</a><br><br>
-            <a href="#">Book a consultation</a><br><br>
-            <a href="#">Locate hospitals and pharmacies</a>
-        </section>
-
+        
         <section>
-            <h5 class="text-center font-bold text-2xl">Connect with us</h5>
-            <div class="flex space-x-5 mt-8">
-                <a href=""><img src="./images/icons8-instagram-50.png" alt=""></a>
-                <a href=""><img src="./images/icons8-facebook-50.png" alt=""></a>
-                <a href=""><img src="./images/icons8-medium-50.png" alt=""></a>
-                <a href=""><img src="./images/icons8-new-message-50.png" alt=""></a>
+            <h5 class="font-bold text-2xl mb-5 text-center">Our services</h5>
+            <div class="md:flex md:space-x-6">
+                <div>
+                    <a href="#">Daily health prompts</a><br><br>
+                    <a href="#">Monitor your vitals</a><br><br>
+                    <a href="#">Track daily blood pressure</a><br><br>
+                    <a href="#">Track daily blood glucose level</a><br><br>
+                </div>
+            
+                <div>
+                    <a href="#">Track your body mass index</a><br><br>
+                    <a href="# ">Personalize record</a><br><br>
+                    <a href="#">Book a consultation</a><br><br>
+                    <a href="#">Locate hospitals and pharmacies</a>
+                </div>
             </div>
+             
+        </section>
+
+        <section class="p-10 md:text-right text-center">
+            <p>Hospitals & <br> Pharmacies around</p>
+            <button class="py-1 px-6 bg-pink-400"><a href="#">Search</a></button>
         </section>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
